@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vida Leve Brasil</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+.header {
+    background:#2e7d32;
+    color:white;
+    padding:20px;
+}
+
+.container {
+    padding:20px;
+}
+
+h1 {
+    color:#2e7d32;
+}
+
+.price {
+    font-size:42px;
+    color:#d32f2f;
+    font-weight:bold;
+}
+
+.old {
+    text-decoration: line-through;
+    color:gray;
+}
+
+.btn {
+    background:#2e7d32;
+    color:white;
+    padding:15px 25px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    margin-top:20px;
+    display:inline-block;
+    text-decoration:none;
+}
+
+.btn:hover {
+    background:#1b5e20;
+}
+
+.timer {
+    font-size:25px;
+    color:red;
+    margin:20px;
+    font-weight:bold;
+}
+
+.box {
+    background:white;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>Vida Leve Brasil</h2>
+<p>Bem-estar e qualidade de vida</p>
+</div>
+
+<div class="container">
+
+<h1>Descubra uma forma simples de se sentir mais leve</h1>
+
+<p>Muitas pessoas estão buscando uma alternativa para melhorar o bem-estar no dia a dia.</p>
+
+<img src="COLE_AQUI_SEU_LINK_DA_IMAGEM" style="width:85%; border-radius:15px;">
+
+<div class="timer" id="timer">⏳ Oferta termina em 10:00</div>
+
+<p class="old">De R$197,00</p>
+<p class="price">Por R$109,99</p>
+
+<a href="COLE_SEU_LINK_DE_AFILIADO" class="btn">QUERO APROVEITAR AGORA</a>
+
+<div class="box">
+<h3>Benefícios</h3>
+<p>✔ Mais leveza</p>
+<p>✔ Mais disposição</p>
+<p>✔ Mais bem-estar</p>
+<p>✔ Fácil de usar</p>
+</div>
+
+<div class="box">
+<h3>Depoimentos</h3>
+<p>"Me senti melhor depois de usar!" — Ana</p>
+<p>"Vale muito a pena testar!" — João</p>
+</div>
+
+<a href="COLE_SEU_LINK_DE_AFILIADO" class="btn">QUERO SABER MAIS</a>
+
+<p style="font-size:12px; margin-top:20px;">
+Resultados podem variar de pessoa para pessoa.
+</p>
+
+</div>
+
+<script>
+var tempo = 600;
+
+setInterval(function(){
+    var min = Math.floor(tempo / 60);
+    var seg = tempo % 60;
+
+    document.getElementById("timer").innerHTML =
+    "⏳ Oferta termina em " + min + ":" + (seg < 10 ? "0" : "") + seg;
+
+    tempo--;
+    if(tempo < 0) tempo = 600;
+}, 1000);
+</script>
+
+</body>
+</html><p>✔ Mais disposição</p>
+<p>✔ Sensação de bem-estar</p>
+<p>✔ Fácil de usar</p>
+</div>
+
+<div class="box">
+<h3>Depoimentos</h3>
+<p>"Estou me sentindo muito melhor!" — Maria</p>
+<p>"Valeu a pena testar!" — João</p>
+</div>
+
+<a href="SEU-LINK-AFILIADO">
+<button class="button">QUERO SABER MAIS</button>
+</a>
+
+<p style="margin-top:20px; font-size:12px;">
+Resultados podem variar de pessoa para pessoa.
+</p>
+
+</div>
+
+<script>
+// CONTADOR
+var time = 600;
+
+setInterval(function(){
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+
+    document.getElementById("countdown").innerHTML =
+    "⏳ Oferta termina em: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+    time--;
+
+    if(time < 0) time = 600;
+}, 1000);
+</script>
+
+</body>
+</html>
