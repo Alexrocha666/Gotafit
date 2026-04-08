@@ -8,47 +8,73 @@
 <style>
 body {
     margin:0;
-    font-family: Arial;
-    background:#f5f5f5;
-    text-align:center;
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
 }
 
-.header {
-    background:linear-gradient(90deg,#2e7d32,#66bb6a);
-    color:white;
-    padding:20px;
-    font-size:22px;
+.topbar {
+    background:#ffeb3b;
+    text-align:center;
+    padding:8px;
     font-weight:bold;
 }
 
+.header {
+    background:linear-gradient(90deg,#1b5e20,#4caf50);
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+}
+
 .container {
+    max-width:500px;
+    margin:auto;
     padding:20px;
 }
 
 h1 {
-    color:#2e7d32;
+    color:#1b5e20;
+    font-size:26px;
+    text-align:center;
 }
 
-.price {
-    font-size:42px;
-    color:#e53935;
-    font-weight:bold;
+.sub {
+    text-align:center;
+    color:#555;
+}
+
+.produto {
+    width:100%;
+    border-radius:15px;
+    margin:20px 0;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.2);
 }
 
 .old {
     text-decoration:line-through;
     color:gray;
+    text-align:center;
+}
+
+.price {
+    font-size:40px;
+    color:#e53935;
+    text-align:center;
+    font-weight:bold;
 }
 
 .btn {
+    display:block;
+    width:100%;
+    text-align:center;
     background:#2e7d32;
     color:white;
-    padding:18px 30px;
+    padding:18px;
     font-size:20px;
     border-radius:10px;
     text-decoration:none;
-    display:inline-block;
-    margin-top:20px;
+    margin-top:15px;
     animation:pulse 1s infinite;
 }
 
@@ -59,25 +85,25 @@ h1 {
 }
 
 .timer {
+    text-align:center;
     color:red;
-    font-size:24px;
-    margin:10px;
     font-weight:bold;
+    margin:10px;
 }
 
 .stock {
     background:#fff3cd;
     padding:10px;
-    margin:10px;
     border-radius:10px;
-    color:#856404;
+    text-align:center;
+    margin:10px 0;
     font-weight:bold;
 }
 
 .box {
     background:white;
     padding:15px;
-    margin:15px;
+    margin-top:15px;
     border-radius:15px;
     box-shadow:0px 0px 10px rgba(0,0,0,0.1);
 }
@@ -85,11 +111,7 @@ h1 {
 .social {
     display:flex;
     align-items:center;
-    text-align:left;
-    margin:10px;
-    background:white;
-    padding:10px;
-    border-radius:10px;
+    margin-top:10px;
 }
 
 .social img {
@@ -99,10 +121,25 @@ h1 {
     margin-right:10px;
 }
 
+.fixed {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#2e7d32;
+    text-align:center;
+    padding:15px;
+}
+
+.fixed a {
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
 .popup {
     position:fixed;
-    bottom:20px;
-    left:20px;
+    bottom:80px;
+    left:10px;
     background:white;
     padding:10px;
     border-radius:10px;
@@ -110,58 +147,91 @@ h1 {
     display:none;
 }
 </style>
-
 </head>
 
 <body>
 
+<div class="topbar">🔥 Promoção por tempo limitado</div>
 <div class="header">Vida Leve Brasil</div>
 
 <div class="container">
 
-<h1>Descubra o que está ajudando pessoas a se sentirem mais leves</h1>
+<h1>Se sentir mais leve pode ser mais simples do que você imagina</h1>
+<p class="sub">Veja o que está chamando atenção de milhares de pessoas</p>
 
-<img src="COLE_IMAGEM" style="width:90%; border-radius:15px;">
+<img src="imagem1.jpg" class="produto">
 
-<div class="timer" id="timer">⏳ Oferta termina em 10:00</div>
-
-<div class="stock" id="stock">🔥 Restam apenas 23 unidades disponíveis</div>
+<div class="timer" id="timer"></div>
+<div class="stock" id="stock">🔥 Restam apenas 23 unidades</div>
 
 <p class="old">De R$197,00</p>
-<p class="price">Por R$109,99</p>
+<p class="price">Por apenas R$109,99</p>
 
-<a href="SEU_LINK" class="btn">QUERO APROVEITAR AGORA</a>
+<a href="SEU_LINK" class="btn">QUERO GARANTIR AGORA</a>
 
 <div class="box">
-<h3>Benefícios</h3>
-<p>✔ Mais leveza no dia a dia</p>
-<p>✔ Mais disposição</p>
-<p>✔ Sensação de bem-estar</p>
+<h3>Imagine isso...</h3>
+<p>✔ Se sentir mais leve no dia a dia</p>
+<p>✔ Ter mais disposição</p>
+<p>✔ Se olhar no espelho com mais confiança</p>
 </div>
 
-<h2>Depoimentos reais:</h2>
+<div class="box">
+<h3>O que torna esse produto diferente?</h3>
+
+<p><b>🔬 Acetilcisteína</b></p>
+<p>Ajuda na limpeza do organismo e contribui para o equilíbrio interno.</p>
+
+<p><b>🌿 Resveratrol</b></p>
+<p>Antioxidante que auxilia na proteção do corpo contra o desgaste do dia a dia.</p>
+
+<p><b>✨ Cúrcuma</b></p>
+<p>Contribui para o bem-estar geral e sensação de leveza no corpo.</p>
+
+</div>
+
+<div class="box">
+<h3>Por que tantas pessoas estão usando?</h3>
+<p>✔ Sensação de leveza</p>
+<p>✔ Mais disposição</p>
+<p>✔ Bem-estar diário</p>
+<p>✔ Fácil de usar</p>
+</div>
+
+<div class="box">
+<h3>Quem já usou:</h3>
 
 <div class="social">
 <img src="https://randomuser.me/api/portraits/women/44.jpg">
-<p><b>Mariana</b><br>Me senti muito melhor depois de usar.</p>
+<p><b>Mariana</b><br>“Me surpreendi muito!”</p>
 </div>
 
 <div class="social">
 <img src="https://randomuser.me/api/portraits/men/32.jpg">
-<p><b>Carlos</b><br>Valeu muito a pena.</p>
+<p><b>Carlos</b><br>“Valeu a pena testar.”</p>
 </div>
 
-<a href="SEU_LINK" class="btn">QUERO GARANTIR O MEU</a>
+<div class="social">
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+<p><b>Juliana</b><br>“Já indiquei pra amigas!”</p>
+</div>
 
-<p style="font-size:12px;">Resultados podem variar.</p>
+</div>
 
+<a href="SEU_LINK" class="btn">QUERO APROVEITAR</a>
+
+<p style="font-size:12px; text-align:center;">Resultados podem variar.</p>
+
+</div>
+
+<div class="fixed">
+<a href="SEU_LINK">COMPRAR AGORA</a>
 </div>
 
 <div class="popup" id="popup"></div>
 
 <script>
 
-// CONTADOR
 var tempo = 600;
 setInterval(function(){
     var min = Math.floor(tempo/60);
@@ -172,17 +242,15 @@ setInterval(function(){
     if(tempo<0) tempo=600;
 },1000);
 
-// ESTOQUE DIMINUINDO
 var estoque = 23;
 setInterval(function(){
     if(estoque > 5){
         estoque--;
         document.getElementById("stock").innerHTML =
-        "🔥 Restam apenas "+estoque+" unidades disponíveis";
+        "🔥 Restam apenas "+estoque+" unidades";
     }
 },8000);
 
-// POPUP DE COMPRA
 var nomes = ["Ana","Carlos","Juliana","Marcos","Fernanda","Pedro"];
 
 setInterval(function(){
