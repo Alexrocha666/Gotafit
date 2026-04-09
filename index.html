@@ -1,272 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vida Leve Brasil</title>
-
-<style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f6f8;
-}
-
-.topbar {
-    background:#ffeb3b;
-    text-align:center;
-    padding:8px;
-    font-weight:bold;
-}
-
-.header {
-    background:linear-gradient(90deg,#1b5e20,#4caf50);
-    color:white;
-    text-align:center;
-    padding:20px;
-    font-size:22px;
-}
-
-.container {
-    max-width:500px;
-    margin:auto;
-    padding:20px;
-}
-
-h1 {
-    color:#1b5e20;
-    font-size:26px;
-    text-align:center;
-}
-
-.sub {
-    text-align:center;
-    color:#555;
-}
-
-.produto {
-    width:100%;
-    border-radius:15px;
-    margin:20px 0;
-    box-shadow:0px 10px 25px rgba(0,0,0,0.2);
-}
-
-.old {
-    text-decoration:line-through;
-    color:gray;
-    text-align:center;
-}
-
-.price {
-    font-size:40px;
-    color:#e53935;
-    text-align:center;
-    font-weight:bold;
-}
-
-.btn {
-    display:block;
-    width:100%;
-    text-align:center;
-    background:#2e7d32;
-    color:white;
-    padding:18px;
-    font-size:20px;
-    border-radius:10px;
-    text-decoration:none;
-    margin-top:15px;
-    animation:pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% {transform:scale(1);}
-    50% {transform:scale(1.05);}
-    100% {transform:scale(1);}
-}
-
-.timer {
-    text-align:center;
-    color:red;
-    font-weight:bold;
-    margin:10px;
-}
-
-.stock {
-    background:#fff3cd;
-    padding:10px;
-    border-radius:10px;
-    text-align:center;
-    margin:10px 0;
-    font-weight:bold;
-}
-
-.box {
-    background:white;
-    padding:15px;
-    margin-top:15px;
-    border-radius:15px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
-}
-
-.social {
-    display:flex;
-    align-items:center;
-    margin-top:10px;
-}
-
-.social img {
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    margin-right:10px;
-}
-
-.fixed {
-    position:fixed;
-    bottom:0;
-    width:100%;
-    background:#2e7d32;
-    text-align:center;
-    padding:15px;
-}
-
-.fixed a {
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-}
-
-.popup {
-    position:fixed;
-    bottom:80px;
-    left:10px;
-    background:white;
-    padding:10px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-    display:none;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaFIG - Transforme sua Saúde</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 100%); }
+        .cta-button { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
+<body class="bg-gray-50 font-sans text-gray-900">
 
-<body>
+    <div class="bg-red-600 text-white text-center py-2 text-sm font-bold uppercase tracking-widest">
+        ⚠️ Oferta por tempo limitado: Restam apenas 12 unidades com desconto!
+    </div>
 
-<div class="topbar">🔥 Promoção por tempo limitado</div>
-<div class="header">Vida Leve Brasil</div>
+    <header class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Recupere sua Vitalidade com <span class="text-cyan-400">GotaFIG</span>
+                </h1>
+                <p class="text-lg mb-8 text-gray-200">
+                    A combinação poderosa de Acetilcisteína, Resveratrol e Curcumina em gotas para absorção imediata. Sinta a diferença no seu corpo logo nos primeiros dias.
+                </p>
+                <a href="#precos" class="cta-button bg-green-500 hover:bg-green-600 text-white text-2xl font-bold py-4 px-8 rounded-full transition-all block text-center shadow-xl">
+                    QUERO MEU GOTAFIG COM DESCONTO!
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="1000245493.png" alt="GotaFIG" class="w-72 md:w-96 drop-shadow-2xl rounded-2xl border-4 border-cyan-500">
+            </div>
+        </div>
+    </header>
 
-<div class="container">
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 italic">A Ciência por trás das Gotas</h2>
+            
+            <div class="grid md:grid-cols-3 gap-10 text-left">
+                <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-cyan-600 text-4xl mb-4"><i class="fas fa-shield-virus"></i></div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Acetilcisteína</h3>
+                    <p class="text-gray-600">Poderoso antioxidante que auxilia na desintoxicação do fígado e proteção das vias respiratórias, aumentando sua imunidade natural.</p>
+                </div>
+                <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Resveratrol</h3>
+                    <p class="text-gray-600">O segredo da longevidade. Combate o envelhecimento celular, protege o coração e melhora a circulação sanguínea.</p>
+                </div>
+                <div class="p-8 border rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-yellow-500 text-4xl mb-4"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Curcumina</h3>
+                    <p class="text-gray-600">O mais potente anti-inflamatório natural. Alivia dores articulares e melhora a função cognitiva e digestiva significativamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Se sentir mais leve pode ser mais simples do que você imagina</h1>
-<p class="sub">Veja o que está chamando atenção de milhares de pessoas</p>
+    <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Quem usa, aprova! ⭐⭐⭐⭐⭐</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow italic">
+                    "Minha disposição mudou da água para o vinho. O GotaFIG agora faz parte da minha rotina matinal!" <br>
+                    <span class="font-bold not-italic block mt-4 text-cyan-700">- Maria Oliveira</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow italic">
+                    "O sabor cítrico é ótimo e a absorção em gotas é muito rápida. Senti minhas dores diminuírem em uma semana." <br>
+                    <span class="font-bold not-italic block mt-4 text-cyan-700">- João Santos</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow italic">
+                    "Produto de alta qualidade. Recomendei para toda a família!" <br>
+                    <span class="font-bold not-italic block mt-4 text-cyan-700">- Dra. Ana Paula</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<img src="arquivo_00000000b25c71f5a5a366e71af7f2ff.png" class="produto">
+    <section id="precos" class="py-20 px-4">
+        <div class="max-w-3xl mx-auto bg-white border-4 border-cyan-500 rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+            <h2 class="text-2xl font-bold uppercase mb-2">Oferta Especial de Lançamento</h2>
+            <p class="text-gray-500 line-through text-xl mb-4">De R$ 199,99</p>
+            <div class="text-5xl md:text-7xl font-extrabold text-green-600 mb-6">
+                <span class="text-2xl">Por apenas</span><br>
+                R$ 109,99
+            </div>
+            <p class="text-gray-600 mb-8 font-semibold">Ou em até 12x no cartão!</p>
+            
+            <a href="SEU_LINK_DE_PAGAMENTO_AQUI" class="cta-button bg-green-500 hover:bg-green-600 text-white text-3xl font-bold py-6 px-10 rounded-xl block transition-all shadow-lg">
+                COMPRAR AGORA! <br>
+                <span class="text-sm font-normal">Site 100% Seguro</span>
+            </a>
+            
+            <div class="mt-8 flex justify-center gap-4 text-4xl text-gray-400">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-pix text-green-500"></i>
+            </div>
+        </div>
+    </section>
 
-<div class="timer" id="timer"></div>
-<div class="stock" id="stock">🔥 Restam apenas 23 unidades</div>
-
-<p class="old">De R$197,00</p>
-<p class="price">Por apenas R$109,99</p>
-
-<a href="SEU_LINK" class="btn">QUERO GARANTIR AGORA</a>
-
-<div class="box">
-<h3>Imagine isso...</h3>
-<p>✔ Se sentir mais leve no dia a dia</p>
-<p>✔ Ter mais disposição</p>
-<p>✔ Se olhar no espelho com mais confiança</p>
-</div>
-
-<div class="box">
-<h3>O que torna esse produto diferente?</h3>
-
-<p><b>🔬 Acetilcisteína</b></p>
-<p>Ajuda na limpeza do organismo e contribui para o equilíbrio interno.</p>
-
-<p><b>🌿 Resveratrol</b></p>
-<p>Antioxidante que auxilia na proteção do corpo contra o desgaste do dia a dia.</p>
-
-<p><b>✨ Cúrcuma</b></p>
-<p>Contribui para o bem-estar geral e sensação de leveza no corpo.</p>
-
-</div>
-
-<div class="box">
-<h3>Por que tantas pessoas estão usando?</h3>
-<p>✔ Sensação de leveza</p>
-<p>✔ Mais disposição</p>
-<p>✔ Bem-estar diário</p>
-<p>✔ Fácil de usar</p>
-</div>
-
-<div class="box">
-<h3>Quem já usou:</h3>
-
-<div class="social">
-<img src="https://randomuser.me/api/portraits/women/44.jpg">
-<p><b>Mariana</b><br>“Me surpreendi muito!”</p>
-</div>
-
-<div class="social">
-<img src="https://randomuser.me/api/portraits/men/32.jpg">
-<p><b>Carlos</b><br>“Valeu a pena testar.”</p>
-</div>
-
-<div class="social">
-<img src="https://randomuser.me/api/portraits/women/68.jpg">
-<p><b>Juliana</b><br>“Já indiquei pra amigas!”</p>
-</div>
-
-</div>
-
-<a href="SEU_LINK" class="btn">QUERO APROVEITAR</a>
-
-<p style="font-size:12px; text-align:center;">Resultados podem variar.</p>
-
-</div>
-
-<div class="fixed">
-<a href="SEU_LINK">COMPRAR AGORA</a>
-</div>
-
-<div class="popup" id="popup"></div>
-
-<script>
-
-var tempo = 600;
-setInterval(function(){
-    var min = Math.floor(tempo/60);
-    var seg = tempo%60;
-    document.getElementById("timer").innerHTML =
-    "⏳ Oferta termina em "+min+":"+(seg<10?"0":"")+seg;
-    tempo--;
-    if(tempo<0) tempo=600;
-},1000);
-
-var estoque = 23;
-setInterval(function(){
-    if(estoque > 5){
-        estoque--;
-        document.getElementById("stock").innerHTML =
-        "🔥 Restam apenas "+estoque+" unidades";
-    }
-},8000);
-
-var nomes = ["Ana","Carlos","Juliana","Marcos","Fernanda","Pedro"];
-
-setInterval(function(){
-    var nome = nomes[Math.floor(Math.random()*nomes.length)];
-    var popup = document.getElementById("popup");
-
-    popup.innerHTML = "🛒 "+nome+" acabou de comprar!";
-    popup.style.display = "block";
-
-    setTimeout(function(){
-        popup.style.display = "none";
-    },3000);
-
-},7000);
-
-</script>
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center text-sm">
+        <p>&copy; 2026 GotaFIG - Todos os direitos reservados.</p>
+        <p class="mt-2 px-4 italic text-xs text-gray-600">Este produto é um suplemento alimentar. Consulte seu médico antes de iniciar o uso.</p>
+    </footer>
 
 </body>
 </html>
